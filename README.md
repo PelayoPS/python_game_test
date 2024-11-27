@@ -1,6 +1,6 @@
 # 🕹️ Python Game Test  
 
-![Python Game Test](https://placeholder-ui.antonshell.me/800x300?text=Python+Game+Test+Banner)
+![Python Game Test](https://placeholder.antonshell.me/img?width=800&height=300&text=Python+Game+Test)
 
 Un juego sencillo desarrollado en Python para probar conceptos de programación y diseño de videojuegos. 🚀  
 
