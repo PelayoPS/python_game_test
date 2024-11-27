@@ -8,6 +8,7 @@ def generate_maze(width, height):
     0 representa camino y 1 representa pared.
     """
     maze = [[1 for _ in range(width)] for _ in range(height)]
+    
 
     def carve_passages(cx, cy):
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
