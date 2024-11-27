@@ -65,6 +65,7 @@ Un juego sencillo desarrollado en Python para probar conceptos de programación 
 
 - [@PelayoPS](https://www.github.com/PelayoPS)
     - Discord: [profile_link](https://discord.com/users/575724048097476628)
+    - Email: [email](mailto:pelayops1041@gmail.com)
 - [@Abelaredo](https://www.github.com/Abelaredo)
 
 
