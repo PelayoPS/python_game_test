@@ -69,5 +69,6 @@ Un juego sencillo desarrollado en Python para probar conceptos de programación 
     
 
 - [@Abelaredo](https://www.github.com/Abelaredo)
-
+    - Discord: [profile link](https://discord.com/users/606236595481215016)
+    - X.com: [AB_Pixels](https://x.com/AB_Pixels) 
 
