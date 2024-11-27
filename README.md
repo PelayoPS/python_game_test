@@ -20,10 +20,10 @@ Un juego sencillo desarrollado en Python para probar conceptos de programación 
 ## 📸 Capturas de Pantalla  
 
 ### 🕹️ Gameplay  
-![Gameplay](https://via.placeholder.com/600x300.png?text=Gameplay+Screenshot)
+![Gameplay](https://placeholder.antonshell.me/img?width=600&height=300&text=Gameplay+Screenshot)
 
 ### 🚀 Menú Principal  
-![Main Menu](https://via.placeholder.com/600x300.png?text=Menu+Screenshot)
+![Main Menu](https://placeholder.antonshell.me/img?width=600&height=300&text=Main+Menu+Screenshot)
 
 ---
 
