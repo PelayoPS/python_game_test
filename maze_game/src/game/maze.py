@@ -22,7 +22,7 @@ def generate_maze(width, height):
 
     # Asegurar que la casilla de entrada y salida sean caminos
     maze[1][1] = 0
-    maze[height - 2][width - 2] = 0
+    maze[height - 2][width - 2] = 2
 
     # Iniciar en la posición (1,1)
     maze[1][1] = 0
@@ -30,10 +30,19 @@ def generate_maze(width, height):
 
     # Añadir un marco al laberinto
     for i in range(width):
-        maze[0][i] = 1
-        maze[height - 1][i] = 1
+        maze[0][i] = 2
+        maze[height - 1][i] = 2
     for i in range(height):
-        maze[i][0] = 1
-        maze[i][width - 1] = 1
+        maze[i][0] = 2
+        maze[i][width - 1] = 2
+
+    # Asegurar que haya un camino entre la entrada y la salida
+    cx, cy = 1, 1
+    while (cx, cy) != (width - 2, height - 2):
+        if cx < width - 2:
+            cx += 1
+        if cy < height - 2:
+            cy += 1
+        maze[cy][cx] = 0
 
     return maze

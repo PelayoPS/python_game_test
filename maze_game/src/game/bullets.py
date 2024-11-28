@@ -18,13 +18,11 @@ class Bullet:
         if 0 <= int(new_pos[0]) < len(maze[0]) and 0 <= int(new_pos[1]) < len(maze):
             if maze[int(new_pos[1])][int(new_pos[0])] == 0:
                 self.pos = new_pos
+                return True  # La bala sigue en movimiento
             else:
-                # Si golpea una pared, podrías eliminar la bala
-                # Aquí se puede implementar la lógica para eliminar la bala
-                pass
+                return False  # La bala colisionó
         else:
-            # Fuera de los límites, podrías eliminar la bala
-            pass
+            return False  # La bala salió del mapa
 
     def draw(self, screen):
         """

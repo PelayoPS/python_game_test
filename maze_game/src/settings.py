@@ -1,8 +1,8 @@
 # settings.py
 
 # Configuración de la pantalla
-SCREEN_WIDTH = 800
-SCREEN_HEIGHT = 800
+SCREEN_WIDTH = 1280
+SCREEN_HEIGHT = 720
 FULLSCREEN = True  # Cambiar a True para modo windowed fullscreen
 
 # Tamaño de cada celda del mapa
@@ -37,4 +37,5 @@ COLORS = {
     "RED": (255, 0, 0),
     "BLACK": (0, 0, 0),
     "YELLOW": (255, 255, 0),
+    "TRANSPARENT": (0, 0, 0, 0),
 }

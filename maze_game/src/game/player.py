@@ -10,26 +10,11 @@ class Player:
 
     def move(self, velocity, maze):
         """
-        Mueve al jugador si la nueva posición no es una pared.
+        Mueve al jugador sin tener en cuenta las paredes o los límites del mapa.
         """
         if np.linalg.norm(velocity) != 0:
             self.direction = np.array(velocity)
-        new_pos = self.pos + np.array(velocity)
-        if 1 <= int(new_pos[0]) < len(maze[0]) - 1 and 1 <= int(new_pos[1]) < len(maze) - 1:
-            if maze[int(new_pos[1])][int(new_pos[0])] == 0:
-                self.pos = new_pos
-            else:
-                # Ajustar la posición para evitar superposición con paredes
-                if maze[int(self.pos[1])][int(new_pos[0])] == 0:
-                    self.pos[0] = new_pos[0]
-                if maze[int(new_pos[1])][int(self.pos[0])] == 0:
-                    self.pos[1] = new_pos[1]
-        else:
-            # Check individual directions to avoid getting stuck in walls
-            if 1 <= int(new_pos[0]) < len(maze[0]) - 1 and maze[int(self.pos[1])][int(new_pos[0])] == 0:
-                self.pos[0] = new_pos[0]
-            if 1 <= int(new_pos[1]) < len(maze) - 1 and maze[int(new_pos[1])][int(self.pos[0])] == 0:
-                self.pos[1] = new_pos[1]
+        self.pos += np.array(velocity)
 
     def get_direction(self):
         """
