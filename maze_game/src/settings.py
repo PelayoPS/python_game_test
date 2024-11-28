@@ -6,7 +6,7 @@ SCREEN_HEIGHT = 720
 FULLSCREEN = True  # Cambiar a True para modo windowed fullscreen
 
 # Tamaño de cada celda del mapa
-CELL_SIZE = 40  # Aumentar el tamaño de la celda para mayor precisión
+CELL_SIZE = 15 # Aumentar el tamaño de la celda para mayor precisión
 
 # Dimensiones del mapa
 MAP_WIDTH = SCREEN_WIDTH // CELL_SIZE
@@ -28,6 +28,12 @@ FPS = 60
 
 # Ruta de la textura de la pared
 TEXTURE_PATH = "assets/textures/texture_wall.png"
+
+# Valores de las casillas del mapa
+CELL_EMPTY = 0
+CELL_WALL = 1
+CELL_EXIT = 2
+CELL_START = 3
 
 # Colores
 COLORS = {
