@@ -1,7 +1,7 @@
 # settings.py
 
 # Configuración de la pantalla
-SCREEN_WIDTH = 1280
+SCREEN_WIDTH = 1282
 SCREEN_HEIGHT = 720
 FULLSCREEN = True  # Cambiar a True para modo windowed fullscreen
 
